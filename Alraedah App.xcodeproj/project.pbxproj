@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3956A385E3AC9052C802BD73 /* Pods_Alraedah_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEB3B0564E2844A45CF6982 /* Pods_Alraedah_App.framework */; };
+		817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287228A1C7420056B7EB /* AppDelegate.swift */; };
+		817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287428A1C7420056B7EB /* SceneDelegate.swift */; };
+		817B287728A1C7420056B7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* ViewController.swift */; };
+		817B287A28A1C7420056B7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B287828A1C7420056B7EB /* Main.storyboard */; };
+		817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 817B287B28A1C7420056B7EB /* Alraedah_App.xcdatamodeld */; };
+		817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817B287E28A1C7450056B7EB /* Assets.xcassets */; };
+		817B288228A1C7450056B7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B288028A1C7450056B7EB /* LaunchScreen.storyboard */; };
+		817B288D28A1C7450056B7EB /* Alraedah_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */; };
+		817B289728A1C7450056B7EB /* Alraedah_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */; };
+		817B289928A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */; };
+		E494E68519AF0457BAD408BF /* Pods_Alraedah_App_Alraedah_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED0511D80E8AC6004020B78 /* Pods_Alraedah_App_Alraedah_AppUITests.framework */; };
+		E8490340104DCA2BCB858EFF /* Pods_Alraedah_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA7472AE316CCE45F8F35C3 /* Pods_Alraedah_AppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		817B288928A1C7450056B7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 817B286728A1C7420056B7EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817B286E28A1C7420056B7EB;
+			remoteInfo = "Alraedah App";
+		};
+		817B289328A1C7450056B7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 817B286728A1C7420056B7EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817B286E28A1C7420056B7EB;
+			remoteInfo = "Alraedah App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ED0511D80E8AC6004020B78 /* Pods_Alraedah_App_Alraedah_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alraedah_App_Alraedah_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA7472AE316CCE45F8F35C3 /* Pods_Alraedah_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alraedah_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEB3B0564E2844A45CF6982 /* Pods_Alraedah_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alraedah_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3EA1F781D1A535E19EB3B3 /* Pods-Alraedah App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App.debug.xcconfig"; path = "Target Support Files/Pods-Alraedah App/Pods-Alraedah App.debug.xcconfig"; sourceTree = "<group>"; };
+		641CE6FA7666BFAE5AC07128 /* Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		817B286F28A1C7420056B7EB /* Alraedah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alraedah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817B287228A1C7420056B7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		817B287428A1C7420056B7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		817B287628A1C7420056B7EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		817B287928A1C7420056B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		817B287C28A1C7420056B7EB /* Alraedah_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alraedah_App.xcdatamodel; sourceTree = "<group>"; };
+		817B287E28A1C7450056B7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		817B288128A1C7450056B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		817B288328A1C7450056B7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817B288828A1C7450056B7EB /* Alraedah AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alraedah AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppTests.swift; sourceTree = "<group>"; };
+		817B289228A1C7450056B7EB /* Alraedah AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alraedah AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITests.swift; sourceTree = "<group>"; };
+		817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2B1AF936BD867445B683236 /* Pods-Alraedah App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App.release.xcconfig"; path = "Target Support Files/Pods-Alraedah App/Pods-Alraedah App.release.xcconfig"; sourceTree = "<group>"; };
+		C99034249D5F1CF644D97D35 /* Pods-Alraedah App-Alraedah AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App-Alraedah AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC825454E8FC0B405CC66879 /* Pods-Alraedah AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah AppTests.release.xcconfig"; path = "Target Support Files/Pods-Alraedah AppTests/Pods-Alraedah AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA32480EE22039491F7C9A2F /* Pods-Alraedah AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Alraedah AppTests/Pods-Alraedah AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		817B286C28A1C7420056B7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3956A385E3AC9052C802BD73 /* Pods_Alraedah_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B288528A1C7450056B7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8490340104DCA2BCB858EFF /* Pods_Alraedah_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B288F28A1C7450056B7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E494E68519AF0457BAD408BF /* Pods_Alraedah_App_Alraedah_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		817B286628A1C7420056B7EB = {
+			isa = PBXGroup;
+			children = (
+				817B287128A1C7420056B7EB /* Alraedah App */,
+				817B288B28A1C7450056B7EB /* Alraedah AppTests */,
+				817B289528A1C7450056B7EB /* Alraedah AppUITests */,
+				817B287028A1C7420056B7EB /* Products */,
+				9A08FC7CF26533E9BD448673 /* Pods */,
+				FA0EA8C6E3B06E3EA7EF8D02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		817B287028A1C7420056B7EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				817B286F28A1C7420056B7EB /* Alraedah App.app */,
+				817B288828A1C7450056B7EB /* Alraedah AppTests.xctest */,
+				817B289228A1C7450056B7EB /* Alraedah AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		817B287128A1C7420056B7EB /* Alraedah App */ = {
+			isa = PBXGroup;
+			children = (
+				817B287228A1C7420056B7EB /* AppDelegate.swift */,
+				817B287428A1C7420056B7EB /* SceneDelegate.swift */,
+				817B287628A1C7420056B7EB /* ViewController.swift */,
+				817B287828A1C7420056B7EB /* Main.storyboard */,
+				817B287E28A1C7450056B7EB /* Assets.xcassets */,
+				817B288028A1C7450056B7EB /* LaunchScreen.storyboard */,
+				817B288328A1C7450056B7EB /* Info.plist */,
+				817B287B28A1C7420056B7EB /* Alraedah_App.xcdatamodeld */,
+			);
+			path = "Alraedah App";
+			sourceTree = "<group>";
+		};
+		817B288B28A1C7450056B7EB /* Alraedah AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */,
+			);
+			path = "Alraedah AppTests";
+			sourceTree = "<group>";
+		};
+		817B289528A1C7450056B7EB /* Alraedah AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */,
+				817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */,
+			);
+			path = "Alraedah AppUITests";
+			sourceTree = "<group>";
+		};
+		9A08FC7CF26533E9BD448673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EA1F781D1A535E19EB3B3 /* Pods-Alraedah App.debug.xcconfig */,
+				B2B1AF936BD867445B683236 /* Pods-Alraedah App.release.xcconfig */,
+				641CE6FA7666BFAE5AC07128 /* Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig */,
+				C99034249D5F1CF644D97D35 /* Pods-Alraedah App-Alraedah AppUITests.release.xcconfig */,
+				EA32480EE22039491F7C9A2F /* Pods-Alraedah AppTests.debug.xcconfig */,
+				DC825454E8FC0B405CC66879 /* Pods-Alraedah AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA0EA8C6E3B06E3EA7EF8D02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEB3B0564E2844A45CF6982 /* Pods_Alraedah_App.framework */,
+				0ED0511D80E8AC6004020B78 /* Pods_Alraedah_App_Alraedah_AppUITests.framework */,
+				0FA7472AE316CCE45F8F35C3 /* Pods_Alraedah_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		817B286E28A1C7420056B7EB /* Alraedah App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817B289C28A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah App" */;
+			buildPhases = (
+				7073FC5D0F86419E552F10BB /* [CP] Check Pods Manifest.lock */,
+				817B286B28A1C7420056B7EB /* Sources */,
+				817B286C28A1C7420056B7EB /* Frameworks */,
+				817B286D28A1C7420056B7EB /* Resources */,
+				F58C2F39B0C989B8C95AC6B4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alraedah App";
+			productName = "Alraedah App";
+			productReference = 817B286F28A1C7420056B7EB /* Alraedah App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		817B288728A1C7450056B7EB /* Alraedah AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817B289F28A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah AppTests" */;
+			buildPhases = (
+				F8225A07307B2FD4364B8895 /* [CP] Check Pods Manifest.lock */,
+				817B288428A1C7450056B7EB /* Sources */,
+				817B288528A1C7450056B7EB /* Frameworks */,
+				817B288628A1C7450056B7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				817B288A28A1C7450056B7EB /* PBXTargetDependency */,
+			);
+			name = "Alraedah AppTests";
+			productName = "Alraedah AppTests";
+			productReference = 817B288828A1C7450056B7EB /* Alraedah AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		817B289128A1C7450056B7EB /* Alraedah AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817B28A228A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah AppUITests" */;
+			buildPhases = (
+				6CC6682E50D62BD348A7F26E /* [CP] Check Pods Manifest.lock */,
+				817B288E28A1C7450056B7EB /* Sources */,
+				817B288F28A1C7450056B7EB /* Frameworks */,
+				817B289028A1C7450056B7EB /* Resources */,
+				64DDDA89FF45C2358B65BF9A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				817B289428A1C7450056B7EB /* PBXTargetDependency */,
+			);
+			name = "Alraedah AppUITests";
+			productName = "Alraedah AppUITests";
+			productReference = 817B289228A1C7450056B7EB /* Alraedah AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		817B286728A1C7420056B7EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					817B286E28A1C7420056B7EB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					817B288728A1C7450056B7EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 817B286E28A1C7420056B7EB;
+					};
+					817B289128A1C7450056B7EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 817B286E28A1C7420056B7EB;
+					};
+				};
+			};
+			buildConfigurationList = 817B286A28A1C7420056B7EB /* Build configuration list for PBXProject "Alraedah App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 817B286628A1C7420056B7EB;
+			productRefGroup = 817B287028A1C7420056B7EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				817B286E28A1C7420056B7EB /* Alraedah App */,
+				817B288728A1C7450056B7EB /* Alraedah AppTests */,
+				817B289128A1C7450056B7EB /* Alraedah AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		817B286D28A1C7420056B7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817B288228A1C7450056B7EB /* LaunchScreen.storyboard in Resources */,
+				817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */,
+				817B287A28A1C7420056B7EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B288628A1C7450056B7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B289028A1C7450056B7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64DDDA89FF45C2358B65BF9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC6682E50D62BD348A7F26E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alraedah App-Alraedah AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7073FC5D0F86419E552F10BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alraedah App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58C2F39B0C989B8C95AC6B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alraedah App/Pods-Alraedah App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alraedah App/Pods-Alraedah App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alraedah App/Pods-Alraedah App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8225A07307B2FD4364B8895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alraedah AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		817B286B28A1C7420056B7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817B287728A1C7420056B7EB /* ViewController.swift in Sources */,
+				817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */,
+				817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */,
+				817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B288428A1C7450056B7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817B288D28A1C7450056B7EB /* Alraedah_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817B288E28A1C7450056B7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817B289928A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift in Sources */,
+				817B289728A1C7450056B7EB /* Alraedah_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		817B288A28A1C7450056B7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 817B286E28A1C7420056B7EB /* Alraedah App */;
+			targetProxy = 817B288928A1C7450056B7EB /* PBXContainerItemProxy */;
+		};
+		817B289428A1C7450056B7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 817B286E28A1C7420056B7EB /* Alraedah App */;
+			targetProxy = 817B289328A1C7450056B7EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		817B287828A1C7420056B7EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				817B287928A1C7420056B7EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		817B288028A1C7450056B7EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				817B288128A1C7450056B7EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		817B289A28A1C7450056B7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		817B289B28A1C7450056B7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		817B289D28A1C7450056B7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3EA1F781D1A535E19EB3B3 /* Pods-Alraedah App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alraedah App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817B289E28A1C7450056B7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B1AF936BD867445B683236 /* Pods-Alraedah App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alraedah App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		817B28A028A1C7450056B7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA32480EE22039491F7C9A2F /* Pods-Alraedah AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alraedah App.app/Alraedah App";
+			};
+			name = Debug;
+		};
+		817B28A128A1C7450056B7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC825454E8FC0B405CC66879 /* Pods-Alraedah AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alraedah App.app/Alraedah App";
+			};
+			name = Release;
+		};
+		817B28A328A1C7450056B7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641CE6FA7666BFAE5AC07128 /* Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Alraedah App";
+			};
+			name = Debug;
+		};
+		817B28A428A1C7450056B7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99034249D5F1CF644D97D35 /* Pods-Alraedah App-Alraedah AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42GWHTH5KL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Alraedah App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		817B286A28A1C7420056B7EB /* Build configuration list for PBXProject "Alraedah App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817B289A28A1C7450056B7EB /* Debug */,
+				817B289B28A1C7450056B7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817B289C28A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817B289D28A1C7450056B7EB /* Debug */,
+				817B289E28A1C7450056B7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817B289F28A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817B28A028A1C7450056B7EB /* Debug */,
+				817B28A128A1C7450056B7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817B28A228A1C7450056B7EB /* Build configuration list for PBXNativeTarget "Alraedah AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817B28A328A1C7450056B7EB /* Debug */,
+				817B28A428A1C7450056B7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		817B287B28A1C7420056B7EB /* Alraedah_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				817B287C28A1C7420056B7EB /* Alraedah_App.xcdatamodel */,
+			);
+			currentVersion = 817B287C28A1C7420056B7EB /* Alraedah_App.xcdatamodel */;
+			path = Alraedah_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 817B286728A1C7420056B7EB /* Project object */;
+}
