@@ -8,9 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3956A385E3AC9052C802BD73 /* Pods_Alraedah_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEB3B0564E2844A45CF6982 /* Pods_Alraedah_App.framework */; };
+		816F61CC28A449CC0098893B /* CareerPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816F61CB28A449CC0098893B /* CareerPage.storyboard */; };
+		816F61CE28A44F410098893B /* CareerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61CD28A44F410098893B /* CareerPageViewController.swift */; };
+		816F61D028A45B280098893B /* CareerPageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61CF28A45B280098893B /* CareerPageProtocols.swift */; };
+		816F61D228A45D040098893B /* CareerPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D128A45D040098893B /* CareerPageViewModel.swift */; };
+		816F61D428A45DC90098893B /* CareerPageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D328A45DC90098893B /* CareerPageUseCase.swift */; };
+		816F61D628A45F960098893B /* CareerPageRemoteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D528A45F960098893B /* CareerPageRemoteRepo.swift */; };
+		816F61D828A460D80098893B /* CareerPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D728A460D80098893B /* CareerPageModel.swift */; };
+		816F61DA28A4E4A00098893B /* CareerPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D928A4E4A00098893B /* CareerPageFactory.swift */; };
+		816F61DC28A4F6B90098893B /* CareerPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61DB28A4F6B90098893B /* CareerPageCell.swift */; };
+		816F61E128A57B910098893B /* AddSkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E028A57B910098893B /* AddSkillsViewController.swift */; };
 		817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287228A1C7420056B7EB /* AppDelegate.swift */; };
 		817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287428A1C7420056B7EB /* SceneDelegate.swift */; };
-		817B287728A1C7420056B7EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* ViewController.swift */; };
+		817B287728A1C7420056B7EB /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* AdminPageViewController.swift */; };
 		817B287A28A1C7420056B7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B287828A1C7420056B7EB /* Main.storyboard */; };
 		817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 817B287B28A1C7420056B7EB /* Alraedah_App.xcdatamodeld */; };
 		817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817B287E28A1C7450056B7EB /* Assets.xcassets */; };
@@ -18,6 +28,14 @@
 		817B288D28A1C7450056B7EB /* Alraedah_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */; };
 		817B289728A1C7450056B7EB /* Alraedah_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */; };
 		817B289928A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */; };
+		817B28B828A2CF1D0056B7EB /* AdminCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28B728A2CF1D0056B7EB /* AdminCell.swift */; };
+		817B28BA28A308310056B7EB /* AdminPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28B928A308310056B7EB /* AdminPanelViewModel.swift */; };
+		817B28BC28A308BE0056B7EB /* ApplicationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28BB28A308BE0056B7EB /* ApplicationsModel.swift */; };
+		817B28BE28A30AC40056B7EB /* AdminPanelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28BD28A30AC40056B7EB /* AdminPanelProtocols.swift */; };
+		817B28C028A30C550056B7EB /* AdminPanelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28BF28A30C550056B7EB /* AdminPanelUseCase.swift */; };
+		817B28C228A30CF60056B7EB /* AdminPanelRemoteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28C128A30CF60056B7EB /* AdminPanelRemoteRepo.swift */; };
+		817B28C628A30D880056B7EB /* AdminPanelLocalRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28C528A30D880056B7EB /* AdminPanelLocalRepo.swift */; };
+		817B28C828A310C40056B7EB /* AdminPanelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28C728A310C40056B7EB /* AdminPanelFactory.swift */; };
 		E494E68519AF0457BAD408BF /* Pods_Alraedah_App_Alraedah_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED0511D80E8AC6004020B78 /* Pods_Alraedah_App_Alraedah_AppUITests.framework */; };
 		E8490340104DCA2BCB858EFF /* Pods_Alraedah_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA7472AE316CCE45F8F35C3 /* Pods_Alraedah_AppTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,10 +63,20 @@
 		1BEB3B0564E2844A45CF6982 /* Pods_Alraedah_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alraedah_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3EA1F781D1A535E19EB3B3 /* Pods-Alraedah App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App.debug.xcconfig"; path = "Target Support Files/Pods-Alraedah App/Pods-Alraedah App.debug.xcconfig"; sourceTree = "<group>"; };
 		641CE6FA7666BFAE5AC07128 /* Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		816F61CB28A449CC0098893B /* CareerPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CareerPage.storyboard; sourceTree = "<group>"; };
+		816F61CD28A44F410098893B /* CareerPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageViewController.swift; sourceTree = "<group>"; };
+		816F61CF28A45B280098893B /* CareerPageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageProtocols.swift; sourceTree = "<group>"; };
+		816F61D128A45D040098893B /* CareerPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageViewModel.swift; sourceTree = "<group>"; };
+		816F61D328A45DC90098893B /* CareerPageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageUseCase.swift; sourceTree = "<group>"; };
+		816F61D528A45F960098893B /* CareerPageRemoteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageRemoteRepo.swift; sourceTree = "<group>"; };
+		816F61D728A460D80098893B /* CareerPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageModel.swift; sourceTree = "<group>"; };
+		816F61D928A4E4A00098893B /* CareerPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageFactory.swift; sourceTree = "<group>"; };
+		816F61DB28A4F6B90098893B /* CareerPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageCell.swift; sourceTree = "<group>"; };
+		816F61E028A57B910098893B /* AddSkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillsViewController.swift; sourceTree = "<group>"; };
 		817B286F28A1C7420056B7EB /* Alraedah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alraedah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B287228A1C7420056B7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817B287428A1C7420056B7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		817B287628A1C7420056B7EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		817B287628A1C7420056B7EB /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		817B287928A1C7420056B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		817B287C28A1C7420056B7EB /* Alraedah_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alraedah_App.xcdatamodel; sourceTree = "<group>"; };
 		817B287E28A1C7450056B7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +87,14 @@
 		817B289228A1C7450056B7EB /* Alraedah AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alraedah AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITests.swift; sourceTree = "<group>"; };
 		817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		817B28B728A2CF1D0056B7EB /* AdminCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCell.swift; sourceTree = "<group>"; };
+		817B28B928A308310056B7EB /* AdminPanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelViewModel.swift; sourceTree = "<group>"; };
+		817B28BB28A308BE0056B7EB /* ApplicationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsModel.swift; sourceTree = "<group>"; };
+		817B28BD28A30AC40056B7EB /* AdminPanelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelProtocols.swift; sourceTree = "<group>"; };
+		817B28BF28A30C550056B7EB /* AdminPanelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelUseCase.swift; sourceTree = "<group>"; };
+		817B28C128A30CF60056B7EB /* AdminPanelRemoteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelRemoteRepo.swift; sourceTree = "<group>"; };
+		817B28C528A30D880056B7EB /* AdminPanelLocalRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelLocalRepo.swift; sourceTree = "<group>"; };
+		817B28C728A310C40056B7EB /* AdminPanelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelFactory.swift; sourceTree = "<group>"; };
 		B2B1AF936BD867445B683236 /* Pods-Alraedah App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App.release.xcconfig"; path = "Target Support Files/Pods-Alraedah App/Pods-Alraedah App.release.xcconfig"; sourceTree = "<group>"; };
 		C99034249D5F1CF644D97D35 /* Pods-Alraedah App-Alraedah AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah App-Alraedah AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Alraedah App-Alraedah AppUITests/Pods-Alraedah App-Alraedah AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC825454E8FC0B405CC66879 /* Pods-Alraedah AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alraedah AppTests.release.xcconfig"; path = "Target Support Files/Pods-Alraedah AppTests/Pods-Alraedah AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +129,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		816F61CA28A449AF0098893B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				816F61CB28A449CC0098893B /* CareerPage.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		816F61DD28A57B660098893B /* AddSkillsPage */ = {
+			isa = PBXGroup;
+			children = (
+				816F61DF28A57B810098893B /* ViewModel */,
+				816F61DE28A57B7C0098893B /* View */,
+			);
+			path = AddSkillsPage;
+			sourceTree = "<group>";
+		};
+		816F61DE28A57B7C0098893B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				816F61E028A57B910098893B /* AddSkillsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		816F61DF28A57B810098893B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		817B286628A1C7420056B7EB = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +186,11 @@
 		817B287128A1C7420056B7EB /* Alraedah App */ = {
 			isa = PBXGroup;
 			children = (
+				816F61DD28A57B660098893B /* AddSkillsPage */,
+				817B28A628A29A5D0056B7EB /* CareerPage */,
+				817B28A528A29A550056B7EB /* AdminPage */,
 				817B287228A1C7420056B7EB /* AppDelegate.swift */,
 				817B287428A1C7420056B7EB /* SceneDelegate.swift */,
-				817B287628A1C7420056B7EB /* ViewController.swift */,
-				817B287828A1C7420056B7EB /* Main.storyboard */,
 				817B287E28A1C7450056B7EB /* Assets.xcassets */,
 				817B288028A1C7450056B7EB /* LaunchScreen.storyboard */,
 				817B288328A1C7450056B7EB /* Info.plist */,
@@ -147,6 +216,183 @@
 			path = "Alraedah AppUITests";
 			sourceTree = "<group>";
 		};
+		817B28A528A29A550056B7EB /* AdminPage */ = {
+			isa = PBXGroup;
+			children = (
+				817B28B428A29D220056B7EB /* Factory */,
+				817B28B328A29D1B0056B7EB /* Repository */,
+				817B28B228A29D150056B7EB /* UseCase */,
+				817B28B128A29D0E0056B7EB /* Protocol */,
+				817B28B028A29D070056B7EB /* Models */,
+				817B28AF28A29D010056B7EB /* ViewModel */,
+				817B28AE28A29CFB0056B7EB /* Views */,
+			);
+			path = AdminPage;
+			sourceTree = "<group>";
+		};
+		817B28A628A29A5D0056B7EB /* CareerPage */ = {
+			isa = PBXGroup;
+			children = (
+				817B28AD28A29CEA0056B7EB /* Factory */,
+				817B28AC28A29CDF0056B7EB /* Repository */,
+				817B28AB28A29CD40056B7EB /* UseCase */,
+				817B28AA28A29CC80056B7EB /* Protocol */,
+				817B28A928A29CBB0056B7EB /* Models */,
+				817B28A828A29CAB0056B7EB /* ViewModel */,
+				817B28A728A29CA40056B7EB /* Views */,
+			);
+			path = CareerPage;
+			sourceTree = "<group>";
+		};
+		817B28A728A29CA40056B7EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				816F61CA28A449AF0098893B /* Storyboard */,
+				816F61CD28A44F410098893B /* CareerPageViewController.swift */,
+				816F61DB28A4F6B90098893B /* CareerPageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		817B28A828A29CAB0056B7EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				816F61D128A45D040098893B /* CareerPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		817B28A928A29CBB0056B7EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				816F61D728A460D80098893B /* CareerPageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		817B28AA28A29CC80056B7EB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				816F61CF28A45B280098893B /* CareerPageProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		817B28AB28A29CD40056B7EB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				816F61D328A45DC90098893B /* CareerPageUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		817B28AC28A29CDF0056B7EB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				816F61D528A45F960098893B /* CareerPageRemoteRepo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		817B28AD28A29CEA0056B7EB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				816F61D928A4E4A00098893B /* CareerPageFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		817B28AE28A29CFB0056B7EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				817B28B628A2CF0C0056B7EB /* Cells */,
+				817B28B528A2A1400056B7EB /* Storyboard */,
+				817B287628A1C7420056B7EB /* AdminPageViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		817B28AF28A29D010056B7EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				817B28B928A308310056B7EB /* AdminPanelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		817B28B028A29D070056B7EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				817B28BB28A308BE0056B7EB /* ApplicationsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		817B28B128A29D0E0056B7EB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				817B28BD28A30AC40056B7EB /* AdminPanelProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		817B28B228A29D150056B7EB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				817B28BF28A30C550056B7EB /* AdminPanelUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		817B28B328A29D1B0056B7EB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				817B28C428A30D790056B7EB /* Local */,
+				817B28C328A30D6F0056B7EB /* Remote */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		817B28B428A29D220056B7EB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				817B28C728A310C40056B7EB /* AdminPanelFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		817B28B528A2A1400056B7EB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				817B287828A1C7420056B7EB /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		817B28B628A2CF0C0056B7EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				817B28B728A2CF1D0056B7EB /* AdminCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		817B28C328A30D6F0056B7EB /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				817B28C128A30CF60056B7EB /* AdminPanelRemoteRepo.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		817B28C428A30D790056B7EB /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				817B28C528A30D880056B7EB /* AdminPanelLocalRepo.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		9A08FC7CF26533E9BD448673 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +403,6 @@
 				EA32480EE22039491F7C9A2F /* Pods-Alraedah AppTests.debug.xcconfig */,
 				DC825454E8FC0B405CC66879 /* Pods-Alraedah AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -283,6 +528,7 @@
 				817B288228A1C7450056B7EB /* LaunchScreen.storyboard in Resources */,
 				817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */,
 				817B287A28A1C7420056B7EB /* Main.storyboard in Resources */,
+				816F61CC28A449CC0098893B /* CareerPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,10 +656,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817B287728A1C7420056B7EB /* ViewController.swift in Sources */,
+				816F61D828A460D80098893B /* CareerPageModel.swift in Sources */,
+				817B287728A1C7420056B7EB /* AdminPageViewController.swift in Sources */,
+				817B28C028A30C550056B7EB /* AdminPanelUseCase.swift in Sources */,
+				816F61D628A45F960098893B /* CareerPageRemoteRepo.swift in Sources */,
+				816F61D028A45B280098893B /* CareerPageProtocols.swift in Sources */,
 				817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */,
+				817B28BE28A30AC40056B7EB /* AdminPanelProtocols.swift in Sources */,
+				817B28B828A2CF1D0056B7EB /* AdminCell.swift in Sources */,
+				817B28C628A30D880056B7EB /* AdminPanelLocalRepo.swift in Sources */,
+				817B28BC28A308BE0056B7EB /* ApplicationsModel.swift in Sources */,
+				816F61D228A45D040098893B /* CareerPageViewModel.swift in Sources */,
+				817B28C828A310C40056B7EB /* AdminPanelFactory.swift in Sources */,
+				816F61D428A45DC90098893B /* CareerPageUseCase.swift in Sources */,
+				816F61CE28A44F410098893B /* CareerPageViewController.swift in Sources */,
+				817B28C228A30CF60056B7EB /* AdminPanelRemoteRepo.swift in Sources */,
+				816F61DA28A4E4A00098893B /* CareerPageFactory.swift in Sources */,
 				817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */,
 				817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */,
+				816F61DC28A4F6B90098893B /* CareerPageCell.swift in Sources */,
+				816F61E128A57B910098893B /* AddSkillsViewController.swift in Sources */,
+				817B28BA28A308310056B7EB /* AdminPanelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
