@@ -1,5 +1,5 @@
 // Created on 11/08/2022
-// Copyright © 2022 Talabat
+// Copyright © 2022 Rizwan
 
 import Foundation
 
@@ -28,4 +28,12 @@ protocol CareerPageUseCaseToRemoteRepoContract: AnyObject {
 protocol CareerPageRemoteRepoToUseCaseContract: AnyObject {
     func fetchRemoteDataSuccess(application: CareerApplication)
     func fetchRemoteDataFailure(error: String)
+}
+
+protocol AddSkillsToCareerPageContract: AnyObject {
+    func skillSelected(skill: String)
+}
+
+protocol FilterToAddSkillsPageContract: AnyObject {
+    func filterApplyTapped(valueSelected: Bool)
 }

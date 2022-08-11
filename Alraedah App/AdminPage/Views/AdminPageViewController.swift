@@ -28,32 +28,37 @@ class AdminPageViewController: UIViewController {
         viewModel?.loadData()
     }
     
-    func showChangeStatusSheet() {
+    func showChangeStatusSheet(index: Int) {
         let alert = UIAlertController(title: "Change Status", message: "Please select status of the application", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Created", style: .default , handler:{ (UIAlertAction) in
-            print("User click Created button")
+            self.updateStatus(status: "Created", index: index)
         }))
         
         alert.addAction(UIAlertAction(title: "Completed", style: .default , handler:{ (UIAlertAction) in
-            print("User click Completed button")
+            self.updateStatus(status: "Completed", index: index)
         }))
         
         alert.addAction(UIAlertAction(title: "Accepted", style: .default , handler:{ (UIAlertAction) in
-            print("User click Accepted button")
+            self.updateStatus(status: "Accepted", index: index)
         }))
         
         alert.addAction(UIAlertAction(title: "Rejected", style: .destructive , handler:{ (UIAlertAction) in
-            print("User click Rejected button")
+            self.updateStatus(status: "Rejected", index: index)
         }))
         
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler:{ (UIAlertAction) in
-            print("User click Dismiss button")
+            
         }))
         
         self.present(alert, animated: true, completion: {
             print("completion block")
         })
+    }
+    
+    func updateStatus(status: String, index: Int) {
+        applications[index].status = status
+        tableView.reloadData()
     }
     
     func showDeleteDialog(index: Int) {
@@ -122,7 +127,7 @@ extension AdminPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let changeStatusAction = UIContextualAction(style: .normal, title: "Change Status") {
             (action, sourceView, completionHandler) in
-            self.showChangeStatusSheet()
+            self.showChangeStatusSheet(index: indexPath.row)
         }
         changeStatusAction.backgroundColor = .link
         
@@ -145,8 +150,8 @@ extension AdminPageViewController: UITableViewDataSource {
 }
 
 extension AdminPageViewController: AdminPanelCellToViewControllerProtocol {
-    func updateStatusTapped() {
-        showChangeStatusSheet()
+    func updateStatusTapped(index: Int) {
+        showChangeStatusSheet(index: index)
     }
     
     func deleteTapped(index: Int) {

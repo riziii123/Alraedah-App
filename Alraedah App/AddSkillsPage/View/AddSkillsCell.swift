@@ -4,9 +4,10 @@
 import Foundation
 import UIKit
 
-class CareerPageCell: UICollectionViewCell {
+class AddSkillsCell: UITableViewCell {
     
     @IBOutlet weak var skillLabel: UILabel!
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

@@ -45,7 +45,7 @@ protocol AdminPanelFactoryContract: AnyObject {
 }
 
 protocol AdminPanelCellToViewControllerProtocol {
-    func updateStatusTapped()
+    func updateStatusTapped(index: Int)
     func deleteTapped(index: Int)
     func editTapped(index: Int)
 }

@@ -18,6 +18,9 @@
 		816F61DA28A4E4A00098893B /* CareerPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61D928A4E4A00098893B /* CareerPageFactory.swift */; };
 		816F61DC28A4F6B90098893B /* CareerPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61DB28A4F6B90098893B /* CareerPageCell.swift */; };
 		816F61E128A57B910098893B /* AddSkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E028A57B910098893B /* AddSkillsViewController.swift */; };
+		816F61E328A57C680098893B /* AddSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E228A57C680098893B /* AddSkillsViewModel.swift */; };
+		816F61E528A581FA0098893B /* AddSkillsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E428A581FA0098893B /* AddSkillsCell.swift */; };
+		816F61E828A5A5E00098893B /* FilterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E728A5A5E00098893B /* FilterPageViewController.swift */; };
 		817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287228A1C7420056B7EB /* AppDelegate.swift */; };
 		817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287428A1C7420056B7EB /* SceneDelegate.swift */; };
 		817B287728A1C7420056B7EB /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* AdminPageViewController.swift */; };
@@ -73,6 +76,9 @@
 		816F61D928A4E4A00098893B /* CareerPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageFactory.swift; sourceTree = "<group>"; };
 		816F61DB28A4F6B90098893B /* CareerPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerPageCell.swift; sourceTree = "<group>"; };
 		816F61E028A57B910098893B /* AddSkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillsViewController.swift; sourceTree = "<group>"; };
+		816F61E228A57C680098893B /* AddSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillsViewModel.swift; sourceTree = "<group>"; };
+		816F61E428A581FA0098893B /* AddSkillsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillsCell.swift; sourceTree = "<group>"; };
+		816F61E728A5A5E00098893B /* FilterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPageViewController.swift; sourceTree = "<group>"; };
 		817B286F28A1C7420056B7EB /* Alraedah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alraedah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B287228A1C7420056B7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817B287428A1C7420056B7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,11 +156,37 @@
 			isa = PBXGroup;
 			children = (
 				816F61E028A57B910098893B /* AddSkillsViewController.swift */,
+				816F61E428A581FA0098893B /* AddSkillsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
 		816F61DF28A57B810098893B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				816F61E228A57C680098893B /* AddSkillsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		816F61E628A5A5CD0098893B /* FilterPage */ = {
+			isa = PBXGroup;
+			children = (
+				816F61EA28A5A5EB0098893B /* ViewModel */,
+				816F61E928A5A5E50098893B /* View */,
+			);
+			path = FilterPage;
+			sourceTree = "<group>";
+		};
+		816F61E928A5A5E50098893B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				816F61E728A5A5E00098893B /* FilterPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		816F61EA28A5A5EB0098893B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -186,6 +218,7 @@
 		817B287128A1C7420056B7EB /* Alraedah App */ = {
 			isa = PBXGroup;
 			children = (
+				816F61E628A5A5CD0098893B /* FilterPage */,
 				816F61DD28A57B660098893B /* AddSkillsPage */,
 				817B28A628A29A5D0056B7EB /* CareerPage */,
 				817B28A528A29A550056B7EB /* AdminPage */,
@@ -674,6 +707,9 @@
 				816F61DA28A4E4A00098893B /* CareerPageFactory.swift in Sources */,
 				817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */,
 				817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */,
+				816F61E328A57C680098893B /* AddSkillsViewModel.swift in Sources */,
+				816F61E828A5A5E00098893B /* FilterPageViewController.swift in Sources */,
+				816F61E528A581FA0098893B /* AddSkillsCell.swift in Sources */,
 				816F61DC28A4F6B90098893B /* CareerPageCell.swift in Sources */,
 				816F61E128A57B910098893B /* AddSkillsViewController.swift in Sources */,
 				817B28BA28A308310056B7EB /* AdminPanelViewModel.swift in Sources */,

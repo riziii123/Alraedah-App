@@ -50,7 +50,11 @@ class CareerPageViewController: UIViewController {
     
     @objc
     func addTapped() {
-        
+        let storyBoard = UIStoryboard(name: "CareerPage", bundle: nil)
+        if let viewController = storyBoard.instantiateViewController(withIdentifier: "add-skills") as? AddSkillsViewController {
+            viewController.careerViewDelegate = self
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     func loadDataToView(application: CareerApplication) {
@@ -124,5 +128,12 @@ extension CareerPageViewController: UIDocumentPickerDelegate {
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         print("view was cancelled")
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension CareerPageViewController: AddSkillsToCareerPageContract {
+    func skillSelected(skill: String) {
+        application?.skills.append(skill)
+        collectionView.reloadData()
     }
 }

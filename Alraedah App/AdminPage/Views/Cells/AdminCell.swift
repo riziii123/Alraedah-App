@@ -32,7 +32,9 @@ class AdminCell: UITableViewCell {
     }
     
     @IBAction func changeStatusTapped(_ sender: Any) {
-        delegate?.updateStatusTapped()
+        if let index = self.index {
+            delegate?.updateStatusTapped(index: index)
+        }
     }
     
     @IBAction func editTapped(_ sender: Any) {
