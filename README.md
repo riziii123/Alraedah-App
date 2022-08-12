@@ -31,6 +31,13 @@ Unit tests are there for Admin Panel screen which is testing the all non UI clas
 ## Architecture:
 I am using MVVM architecture with an addition of Usecases and repository layer. 
 
+## How to Run
+- Install Xcode on the mac machine.
+- Download the project or clone the repo in the directory
+- Run `pod install` to install all the dependencies.
+- Open `xcworkspace` project in Xcode
+- Run the project.
+
 ### To login in the app (also mentioned on the login screen):
 
 ```
