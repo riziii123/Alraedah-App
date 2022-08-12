@@ -22,6 +22,8 @@
 		816F61E528A581FA0098893B /* AddSkillsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E428A581FA0098893B /* AddSkillsCell.swift */; };
 		816F61E828A5A5E00098893B /* FilterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61E728A5A5E00098893B /* FilterPageViewController.swift */; };
 		816F61EE28A5BBAA0098893B /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61ED28A5BBAA0098893B /* PopUpViewController.swift */; };
+		816F61F328A659D00098893B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816F61F228A659D00098893B /* LoginStoryboard.storyboard */; };
+		816F61F528A65B380098893B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61F428A65B380098893B /* LoginViewController.swift */; };
 		817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287228A1C7420056B7EB /* AppDelegate.swift */; };
 		817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287428A1C7420056B7EB /* SceneDelegate.swift */; };
 		817B287728A1C7420056B7EB /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* AdminPageViewController.swift */; };
@@ -81,6 +83,8 @@
 		816F61E428A581FA0098893B /* AddSkillsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSkillsCell.swift; sourceTree = "<group>"; };
 		816F61E728A5A5E00098893B /* FilterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPageViewController.swift; sourceTree = "<group>"; };
 		816F61ED28A5BBAA0098893B /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		816F61F228A659D00098893B /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		816F61F428A65B380098893B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		817B286F28A1C7420056B7EB /* Alraedah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alraedah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B287228A1C7420056B7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817B287428A1C7420056B7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +215,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		816F61EF28A659AF0098893B /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				816F61F028A659B80098893B /* View */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		816F61F028A659B80098893B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				816F61F128A659BF0098893B /* Storyboard */,
+				816F61F428A65B380098893B /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		816F61F128A659BF0098893B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				816F61F228A659D00098893B /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		817B286628A1C7420056B7EB = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +265,7 @@
 		817B287128A1C7420056B7EB /* Alraedah App */ = {
 			isa = PBXGroup;
 			children = (
+				816F61EF28A659AF0098893B /* LoginView */,
 				816F61EB28A5BB8E0098893B /* PopUpView */,
 				816F61E628A5A5CD0098893B /* FilterPage */,
 				816F61DD28A57B660098893B /* AddSkillsPage */,
@@ -578,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817B288228A1C7450056B7EB /* LaunchScreen.storyboard in Resources */,
+				816F61F328A659D00098893B /* LoginStoryboard.storyboard in Resources */,
 				817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */,
 				817B287A28A1C7420056B7EB /* Main.storyboard in Resources */,
 				816F61CC28A449CC0098893B /* CareerPage.storyboard in Resources */,
@@ -732,6 +763,7 @@
 				816F61E528A581FA0098893B /* AddSkillsCell.swift in Sources */,
 				816F61DC28A4F6B90098893B /* CareerPageCell.swift in Sources */,
 				816F61E128A57B910098893B /* AddSkillsViewController.swift in Sources */,
+				816F61F528A65B380098893B /* LoginViewController.swift in Sources */,
 				817B28BA28A308310056B7EB /* AdminPanelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

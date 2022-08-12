@@ -18,6 +18,8 @@ class AdminPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Admin Page"
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
         
         do {
             try viewModel = AdminPanelFactory().createAdminPanelViewModel(view: self)
@@ -26,6 +28,11 @@ class AdminPageViewController: UIViewController {
         }
         
         viewModel?.loadData()
+    }
+    
+    @objc
+    func logoutTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     func showChangeStatusSheet(index: Int) {
@@ -78,9 +85,10 @@ class AdminPageViewController: UIViewController {
     
     func openCareerPage() {
         let storyBoard = UIStoryboard(name: "CareerPage", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "career-page")
-        
-        navigationController?.pushViewController(viewController, animated: true)
+        if let viewController = storyBoard.instantiateViewController(withIdentifier: "career-page") as? CareerPageViewController {
+            viewController.isComingFromAdmin = true
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 

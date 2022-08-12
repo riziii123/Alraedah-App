@@ -25,6 +25,7 @@ class CareerPageViewController: UIViewController {
     
     var application: CareerApplication?
     var viewModel: CareerPageViewToViewModelContract?
+    var isComingFromAdmin: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,14 @@ class CareerPageViewController: UIViewController {
         collectionMainView.layer.borderColor = UIColor.black.cgColor
         collectionMainView.layer.cornerRadius = 8
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Skills", style: .plain, target: self, action: #selector(addTapped))
+        if isComingFromAdmin {
+            uploadResumeButton.isHidden = true
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Skills", style: .plain, target: self, action: #selector(addTapped))
+        } else {
+            self.navigationItem.setHidesBackButton(true, animated: true)
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add Skills", style: .plain, target: self, action: #selector(addTapped))
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        }
         
         viewModel = CareerPageFactory().getCareerPageViewModel(view: self)
         viewModel?.loadData()
@@ -53,6 +61,11 @@ class CareerPageViewController: UIViewController {
                 self.present(viewController, animated: true, completion: nil)
             }
         })
+    }
+    
+    @objc
+    func logoutTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc
