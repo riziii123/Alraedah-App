@@ -24,6 +24,14 @@
 		816F61EE28A5BBAA0098893B /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61ED28A5BBAA0098893B /* PopUpViewController.swift */; };
 		816F61F328A659D00098893B /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816F61F228A659D00098893B /* LoginStoryboard.storyboard */; };
 		816F61F528A65B380098893B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61F428A65B380098893B /* LoginViewController.swift */; };
+		816F61FD28A672C10098893B /* AdminPanelViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61FC28A672C10098893B /* AdminPanelViewModelTest.swift */; };
+		816F61FF28A6731B0098893B /* MockAdminPanelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F61FE28A6731B0098893B /* MockAdminPanelUseCase.swift */; };
+		816F620128A674FF0098893B /* MockAdminPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620028A674FF0098893B /* MockAdminPanelViewController.swift */; };
+		816F620328A677150098893B /* AdminPanelUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620228A677150098893B /* AdminPanelUseCaseTest.swift */; };
+		816F620528A6778A0098893B /* MockAdminPanelRemoteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620428A6778A0098893B /* MockAdminPanelRemoteRepo.swift */; };
+		816F620728A677D60098893B /* MockAdminPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620628A677D60098893B /* MockAdminPanelViewModel.swift */; };
+		816F620928A678FA0098893B /* MockAdminPanelLocalRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620828A678FA0098893B /* MockAdminPanelLocalRepo.swift */; };
+		816F620B28A67D080098893B /* AdminPanelRemoteRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F620A28A67D080098893B /* AdminPanelRemoteRepoTest.swift */; };
 		817B287328A1C7420056B7EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287228A1C7420056B7EB /* AppDelegate.swift */; };
 		817B287528A1C7420056B7EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287428A1C7420056B7EB /* SceneDelegate.swift */; };
 		817B287728A1C7420056B7EB /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B287628A1C7420056B7EB /* AdminPageViewController.swift */; };
@@ -31,7 +39,6 @@
 		817B287D28A1C7420056B7EB /* Alraedah_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 817B287B28A1C7420056B7EB /* Alraedah_App.xcdatamodeld */; };
 		817B287F28A1C7450056B7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817B287E28A1C7450056B7EB /* Assets.xcassets */; };
 		817B288228A1C7450056B7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B288028A1C7450056B7EB /* LaunchScreen.storyboard */; };
-		817B288D28A1C7450056B7EB /* Alraedah_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */; };
 		817B289728A1C7450056B7EB /* Alraedah_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */; };
 		817B289928A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */; };
 		817B28B828A2CF1D0056B7EB /* AdminCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B28B728A2CF1D0056B7EB /* AdminCell.swift */; };
@@ -85,6 +92,14 @@
 		816F61ED28A5BBAA0098893B /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		816F61F228A659D00098893B /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		816F61F428A65B380098893B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		816F61FC28A672C10098893B /* AdminPanelViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelViewModelTest.swift; sourceTree = "<group>"; };
+		816F61FE28A6731B0098893B /* MockAdminPanelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdminPanelUseCase.swift; sourceTree = "<group>"; };
+		816F620028A674FF0098893B /* MockAdminPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdminPanelViewController.swift; sourceTree = "<group>"; };
+		816F620228A677150098893B /* AdminPanelUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelUseCaseTest.swift; sourceTree = "<group>"; };
+		816F620428A6778A0098893B /* MockAdminPanelRemoteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdminPanelRemoteRepo.swift; sourceTree = "<group>"; };
+		816F620628A677D60098893B /* MockAdminPanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdminPanelViewModel.swift; sourceTree = "<group>"; };
+		816F620828A678FA0098893B /* MockAdminPanelLocalRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAdminPanelLocalRepo.swift; sourceTree = "<group>"; };
+		816F620A28A67D080098893B /* AdminPanelRemoteRepoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelRemoteRepoTest.swift; sourceTree = "<group>"; };
 		817B286F28A1C7420056B7EB /* Alraedah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alraedah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B287228A1C7420056B7EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817B287428A1C7420056B7EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +110,6 @@
 		817B288128A1C7450056B7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817B288328A1C7450056B7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817B288828A1C7450056B7EB /* Alraedah AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alraedah AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppTests.swift; sourceTree = "<group>"; };
 		817B289228A1C7450056B7EB /* Alraedah AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alraedah AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B289628A1C7450056B7EB /* Alraedah_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITests.swift; sourceTree = "<group>"; };
 		817B289828A1C7450056B7EB /* Alraedah_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alraedah_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -240,6 +254,53 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		816F61F628A6685B0098893B /* AdminPage */ = {
+			isa = PBXGroup;
+			children = (
+				816F61FB28A668A20098893B /* MockClasses */,
+				816F61F928A668830098893B /* RemoteRepo */,
+				816F61F828A6687A0098893B /* UseCase */,
+				816F61F728A6686B0098893B /* ViewModel */,
+			);
+			path = AdminPage;
+			sourceTree = "<group>";
+		};
+		816F61F728A6686B0098893B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				816F61FC28A672C10098893B /* AdminPanelViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		816F61F828A6687A0098893B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				816F620228A677150098893B /* AdminPanelUseCaseTest.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		816F61F928A668830098893B /* RemoteRepo */ = {
+			isa = PBXGroup;
+			children = (
+				816F620A28A67D080098893B /* AdminPanelRemoteRepoTest.swift */,
+			);
+			path = RemoteRepo;
+			sourceTree = "<group>";
+		};
+		816F61FB28A668A20098893B /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				816F61FE28A6731B0098893B /* MockAdminPanelUseCase.swift */,
+				816F620028A674FF0098893B /* MockAdminPanelViewController.swift */,
+				816F620428A6778A0098893B /* MockAdminPanelRemoteRepo.swift */,
+				816F620628A677D60098893B /* MockAdminPanelViewModel.swift */,
+				816F620828A678FA0098893B /* MockAdminPanelLocalRepo.swift */,
+			);
+			path = MockClasses;
+			sourceTree = "<group>";
+		};
 		817B286628A1C7420056B7EB = {
 			isa = PBXGroup;
 			children = (
@@ -284,7 +345,7 @@
 		817B288B28A1C7450056B7EB /* Alraedah AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				817B288C28A1C7450056B7EB /* Alraedah_AppTests.swift */,
+				816F61F628A6685B0098893B /* AdminPage */,
 			);
 			path = "Alraedah AppTests";
 			sourceTree = "<group>";
@@ -574,6 +635,7 @@
 					};
 					817B288728A1C7450056B7EB = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 817B286E28A1C7420056B7EB;
 					};
 					817B289128A1C7450056B7EB = {
@@ -772,7 +834,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817B288D28A1C7450056B7EB /* Alraedah_AppTests.swift in Sources */,
+				816F620328A677150098893B /* AdminPanelUseCaseTest.swift in Sources */,
+				816F620128A674FF0098893B /* MockAdminPanelViewController.swift in Sources */,
+				816F620528A6778A0098893B /* MockAdminPanelRemoteRepo.swift in Sources */,
+				816F61FF28A6731B0098893B /* MockAdminPanelUseCase.swift in Sources */,
+				816F620B28A67D080098893B /* AdminPanelRemoteRepoTest.swift in Sources */,
+				816F620928A678FA0098893B /* MockAdminPanelLocalRepo.swift in Sources */,
+				816F61FD28A672C10098893B /* AdminPanelViewModelTest.swift in Sources */,
+				816F620728A677D60098893B /* MockAdminPanelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,15 +1069,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42GWHTH5KL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alraedah App.app/Alraedah App";
@@ -1021,11 +1097,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42GWHTH5KL;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rizwansaleem.Alraedah-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
