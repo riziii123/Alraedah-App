@@ -30,3 +30,18 @@ Unit tests are there for Admin Panel screen which is testing the all non UI clas
 
 ## Architecture:
 I am using MVVM architecture with an addition of Usecases and repository layer. 
+
+### To login in the app (also mentioned on the login screen):
+
+```
+Admin:
+Username: admin
+Password: admin
+```
+
+
+```
+User:
+Username: user
+Password: user
+```
