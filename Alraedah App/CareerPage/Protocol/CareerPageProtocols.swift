@@ -5,6 +5,7 @@ import Foundation
 
 protocol CareerPageViewToViewModelContract: AnyObject {
     func loadData()
+    func submitResume()
 }
 
 protocol CareerPageViewModelToViewContract: AnyObject {
@@ -14,6 +15,7 @@ protocol CareerPageViewModelToViewContract: AnyObject {
 
 protocol CareerPageViewModelToUseCaseContract: AnyObject {
     func fetchData()
+    func uploadResume()
 }
 
 protocol CareerPageUseCaseToViewModelContract: AnyObject {

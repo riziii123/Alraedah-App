@@ -18,14 +18,19 @@ class CareerPageViewController: UIViewController {
     @IBOutlet weak var resumeUrl: UILabel!
     @IBOutlet weak var dateAppliedLabel: UILabel!
     @IBOutlet weak var uploadResumeButton: UIButton!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var collectionMainView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var application: CareerApplication?
+    var viewModel: CareerPageViewToViewModelContract?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingIndicator.startAnimating()
+        loadingIndicator.isHidden = true
         
         collectionMainView.layer.masksToBounds = true
         collectionMainView.layer.borderWidth = 1
@@ -34,18 +39,20 @@ class CareerPageViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Skills", style: .plain, target: self, action: #selector(addTapped))
         
-        let viewModel = CareerPageFactory().getCareerPageViewModel(view: self)
-        viewModel.loadData()
+        viewModel = CareerPageFactory().getCareerPageViewModel(view: self)
+        viewModel?.loadData()
     }
 
     @IBAction func uploadResumeTapped(_ sender: Any) {
-        let types = UTType.types(tag: "pdf",
-                                    tagClass: UTTagClass.filenameExtension,
-                                    conformingTo: nil)
-           let documentPickerController = UIDocumentPickerViewController(
-                   forOpeningContentTypes: types)
-           documentPickerController.delegate = self
-           self.present(documentPickerController, animated: true, completion: nil)
+        loadingIndicator.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+            self.loadingIndicator.isHidden = true
+            let storyBoard = UIStoryboard(name: "CareerPage", bundle: nil)
+            if let viewController = storyBoard.instantiateViewController(withIdentifier: "popUp") as? PopUpViewController {
+                viewController.modalPresentationStyle = .overCurrentContext
+                self.present(viewController, animated: true, completion: nil)
+            }
+        })
     }
     
     @objc
@@ -61,9 +68,12 @@ class CareerPageViewController: UIViewController {
         userImageView.sd_setImage(with: URL(string: application.imageUrl), completed: nil)
         
         nameLabel.text = "\(application.firstName) \(application.lastName)"
-        occupationLabel.text = application.occupation
+        occupationLabel.text = "Occupation: \(application.occupation)"
         statusLabel.text = "Status: \(application.status)"
         scoreLabel.text = "Score: \(application.score)"
+        linkedinUrl.text = "LinkedIn: \(application.linkedinUrl)"
+        resumeUrl.text = "Resume: \(application.resumeUrl)"
+        dateAppliedLabel.text = "Date applied: \(application.dateApplied)"
         
         collectionView.reloadData()
     }
@@ -108,27 +118,6 @@ extension CareerPageViewController: CareerPageViewModelToViewContract {
     }
     
     
-}
-
-extension CareerPageViewController: UIDocumentPickerDelegate {
-    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-        guard let myURL = urls.first else {
-            return
-        }
-        print("import result : \(myURL)")
-    }
-          
-
-    public func documentMenu(_ documentMenu: UIDocumentPickerViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
-        documentPicker.delegate = self
-        present(documentPicker, animated: true, completion: nil)
-    }
-
-
-    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
-        print("view was cancelled")
-        dismiss(animated: true, completion: nil)
-    }
 }
 
 extension CareerPageViewController: AddSkillsToCareerPageContract {

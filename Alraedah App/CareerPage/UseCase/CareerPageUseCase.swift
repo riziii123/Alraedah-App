@@ -14,6 +14,10 @@ class CareerPageUseCase: CareerPageViewModelToUseCaseContract {
     func fetchData() {
         repo?.fetchRemoteData()
     }
+    
+    func uploadResume() {
+        repo?.fetchRemoteData()
+    }
 }
 
 extension CareerPageUseCase: CareerPageRemoteRepoToUseCaseContract {

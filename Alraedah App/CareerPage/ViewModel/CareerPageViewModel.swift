@@ -14,6 +14,10 @@ class CareerPageViewModel: CareerPageViewToViewModelContract {
     func loadData() {
         useCase?.fetchData()
     }
+    
+    func submitResume() {
+        useCase?.uploadResume()
+    }
 }
 
 extension CareerPageViewModel: CareerPageUseCaseToViewModelContract {
